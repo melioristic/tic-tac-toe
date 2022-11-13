@@ -32,6 +32,16 @@ class TTTBoard(object):
         """
         for i in range(3):
             start = 3*i
-            print(f"{self.state[start]} | {self.state[start+1]} | {self.state[start+2]}")
+            print(f"{self._convert01OX(self.state[start])} | {self._convert01OX(self.state[start+1])} | {self._convert01OX(self.state[start+2])}")              
             if i<2:
                 print("-------------")
+
+    def _convert01OX(self, element):
+        if element==[0]:
+            element="[O]"
+        elif element==[1]:
+            element= "[X]"
+        else:
+            element = "[ ]"
+
+        return element
