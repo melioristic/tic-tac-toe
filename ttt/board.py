@@ -27,6 +27,9 @@ class TTTBoard(object):
             self.state = [[] for i in range(9)]
 
     def show_board(self):
+        """
+        Basic code for visualisation of the board
+        """
         for i in range(3):
             start = 3*i
             print(f"{self.state[start]} | {self.state[start+1]} | {self.state[start+2]}")
