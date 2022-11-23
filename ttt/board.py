@@ -134,3 +134,6 @@ class TTTBoard(object):
 # print(Back.GREEN + 'and with a green background')
 # print(Style.DIM + 'and in dim text')
 # print(Style.RESET_ALL)
+
+def hi(s:str):
+    return f"Hi {s}!"
